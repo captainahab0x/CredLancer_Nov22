@@ -1,9 +1,3 @@
-# Deploy Dapp
-
-> You can found my website here:
- https://m1rn4.github.io/Set-up-adn-mobile-first/
-
-
 # Project Name
 
 > "https://github.com/captainahab0x/CredLancer_Nov22" is the repository for our portfalio 
@@ -27,6 +21,8 @@ To get a local copy up and running follow these simple example steps.
 
 # Demo:
 You can see the next pages in our [figma] (https://www.figma.com/file/W0RpvEENLBe4UhxjrtM2II/Website-Mockup?node-id=137%3A78&t=0KxJLnFAwSqy0Ob3-0) 
+
+![Alt text](/Moqups/Flujo.png?raw=true "Flujo")
 
 - Landing
 - Signup Freelancer
