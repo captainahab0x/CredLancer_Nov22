@@ -111,6 +111,14 @@ Job posting by entities like Dao. At the time of posting, 25% is deposited and i
 engagement
 - Payouts - money movement
 
+## How this was Made
+
+-For the front end we use react with RainbowKit for a easy access to the smart contracts in the Wallaby network.
+
+- For the smart contract development we user the FEVM-hardhat-kit as boilerplate for the development.
+
+- For the design we use Figma.
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
