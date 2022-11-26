@@ -1,40 +1,23 @@
-
 import './App.css';
-import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
-import "primereact/resources/primereact.min.css";                  //core css
-import "primeicons/primeicons.css";     
-
-import { HashRouter, Routes, Route } from 'react-router-dom';
-
-import HomePage from './pages/HomePage';
-import DashboardPage from './pages/DashboardPage';
-import TasksPage from './pages/TasksPage';
-import SignUpFreelancerPage from './pages/SignUpFreelancerPage';
-import SignUpOrganizationPage from './pages/SignUpOrganizationPage';
-
-import HeaderComponent from './components/HeaderComponent';
-import MenuComponent from './components/MenuComponent';
-import FooterComponent from './components/FooterComponent';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import './assets/css/style.css'
+import Home from './pages/Home'
+import Staking from './pages/Staking'
+import Snuck from './pages/Snuck'
+import Tokenomics from './pages/Tokenomics'
+import './style.css';
 
 function App() {
-
-
   return (
-      <HashRouter>
-        <HeaderComponent />
-        <MenuComponent />
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/Dashboard" element={<DashboardPage />} />
-        <Route path="/Tasks" element={<TasksPage />} />
-        <Route path="/CreateProfile" element={<SignUpFreelancerPage />} />
-        <Route path="/CreateOrganization" element={<SignUpOrganizationPage />} />
-        <Route path="*" element={<p>Not Found</p>} />
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/snuck" element={<Snuck />}></Route>
+        <Route path="/staking" element={<Staking />}></Route>
+        <Route path="/tokenomics" element={<Tokenomics />}></Route>
       </Routes>
-      <FooterComponent />
-    </HashRouter>
-
-    );
+    </BrowserRouter>
+  );
 }
 
 export default App;

@@ -1,0 +1,3481 @@
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+
+:root {
+    --main-bg-color: rgb(41 17 108);
+    --second-color: #f3b82f;
+    --third-color: #d49709;
+    --sidebar-width: 200px;
+    --box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.1607843137254902)
+}
+
+* {
+    padding: 0;
+    font-family: "Aclonica", sans-serif;
+    color: #fff;
+    box-sizing: border-box
+}
+
+*,
+body {
+    margin: 0
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    background-color: #000;
+    background-color: var(--main-bg-color)
+}
+
+button {
+    cursor: pointer
+}
+
+a {
+    text-decoration: none
+}
+
+.site-link {
+    padding: 45px 0
+}
+
+.site-link a {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto
+}
+
+/* wideside style */
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1526px !important;
+    }
+}
+
+
+/* Snuck mobile style */
+
+@media screen and (min-width: 992px) {
+    .snuck-mobile-section {
+        display: none;
+    }
+}
+
+.snuck-mobile-section .snuck-btn-mobile-menu button {
+    background-color: #000;
+    border: none;
+}
+
+.snuck-mobile-section .snuck-btn-mobile-menu button svg {
+    width: 30px;
+    height: 50px;
+}
+
+@media screen and (min-width:992px) {
+    #mobile-menu {
+        display: none;
+    }
+}
+
+#mobile-menu ul {
+    padding-left: 0px !important;
+}
+
+#mobile-menu ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#mobile-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* White paper */
+
+.whitepaper-content .section {
+    position: relative;
+    padding: 5rem 0 0
+}
+
+.whitepaper-content .section:last-of-type {
+    margin-bottom: 15rem
+}
+
+.whitepaper-content .section:before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 10px;
+    background: #262626
+}
+
+.whitepaper-content h2 {
+    margin: 7rem 0;
+    font-size: 70px
+}
+
+.whitepaper-content h3 {
+    margin: 4rem 0;
+    font-size: 50px
+}
+
+.whitepaper-content p {
+    font-size: 28px;
+    line-height: 1.3
+}
+
+.whitepaper-content a {
+    text-decoration: underline
+}
+
+.whitepaper-content p span {
+    font-size: 40px;
+    font-weight: 500
+}
+
+.whitepaper-content .highlight {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.landing-banner,
+.landing-banner img {
+    width: 100%
+}
+
+.landing-welcome .landing-content {
+    text-align: center
+}
+
+.landing-welcome .landing-content h1 {
+    font-size: 70px;
+    padding: 2rem 0
+}
+
+.landing-welcome .landing-content h1 span {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.landing-welcome .landing-content p {
+    font-size: 30px;
+    letter-spacing: -.3px
+}
+
+.landing-welcome .landing-buy-nft {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0
+}
+
+.landing-welcome .landing-buy-nft button {
+    font-size: 26px !important;
+    padding: 10px;
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    margin-right: 100px
+}
+
+.landing-welcome .landing-buy-nft button:last-child {
+    margin-right: 0 !important
+}
+
+.landing-welcome .landing-nft-bar-container {
+    position: relative;
+    height: 200px;
+    margin: 5rem 0
+}
+
+.landing-welcome .landing-nft-bar {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0
+}
+
+.landing-welcome .landing-nft-bar.hidden {
+    display: none
+}
+
+.landing-welcome .landing-nft-bar.main {
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    width: 200%;
+    -webkit-animation: move 10s linear 0s infinite;
+    animation: move 10s linear 0s infinite
+}
+
+.landing-welcome .landing-nft-bar.left {
+    position: absolute;
+    top: -5rem;
+    left: -100%;
+    width: 100%;
+    -webkit-animation: left-move 10s linear 0s infinite;
+    animation: left-move 10s linear 0s infinite
+}
+
+.landing-welcome .landing-nft-bar.right {
+    position: absolute;
+    top: -5rem;
+    left: 100%;
+    width: 100%;
+    -webkit-animation: right-move 10s linear 0s infinite;
+    animation: right-move 10s linear 0s infinite
+}
+
+.landing-welcome .landing-nft-bar.left-back {
+    position: absolute;
+    top: -5rem;
+    left: -200%;
+    width: 200%;
+    -webkit-animation: left-back-move 10s linear 0s infinite;
+    animation: left-back-move 10s linear 0s infinite
+}
+
+.landing-nft-bar .landing-nft-box {
+    width: 200px
+}
+
+.landing-nft-bar .landing-nft-box img {
+    width: 100%
+}
+
+.landing-store-container {
+    margin-top: 5rem;
+    height: 1060px;
+    overflow: hidden
+}
+
+.landing-store-container p {
+    font-size: 30px
+}
+
+.landing-store-container p span {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.landing-store-view-container {
+    position: relative;
+    margin-top: 5rem
+}
+
+.landing-store-container .landing-store-view {
+    border: 2px solid #f3b82f;
+    border: 2px solid var(--second-color);
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    background: #141414;
+    left: 0;
+    transition: left .5s ease-in-out
+}
+
+.landing-store-container .landing-store-view.left {
+    left: -105%
+}
+
+.landing-store-container .landing-store-view.right {
+    left: 105%
+}
+
+.landing-store-container .landing-store-view.far-left {
+    left: -210%
+}
+
+.landing-store-container .landing-store-view.far-right {
+    left: 210%
+}
+
+.landing-store-container .landing-store-view-left-overlay {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: -10%;
+    left: -100%;
+    background: linear-gradient(270deg, transparent 5%, #000 15%, #000);
+    z-index: 100
+}
+
+.landing-store-container .landing-store-view-right-overlay {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: -10%;
+    left: 100%;
+    background: linear-gradient(90deg, transparent 5%, #000 15%, #000);
+    z-index: 100
+}
+
+.landing-store-view .landing-store {
+    width: 100%;
+    height: 650px;
+    position: relative
+}
+
+.landing-store .landing-store-content {
+    display: flex;
+    height: 100%
+}
+
+.landing-store-content .landing-store-info {
+    padding: 8rem 0 0 2rem;
+    max-width: 900px
+}
+
+.landing-store-content .landing-store-info .store-name {
+    height: calc(100% - 300px)
+}
+
+.landing-store-content .landing-store-info h2 {
+    font-size: 60px;
+    margin-bottom: 3rem
+}
+
+.landing-store-content .landing-store-info p {
+    font-size: 24px
+}
+
+.landing-store-content .landing-store-info .store-action button {
+    max-width: none;
+    width: auto;
+    padding: 10px 3rem;
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    font-size: 38px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    margin: 30px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: white;
+    font-weight: 600;
+    text-transform: none;
+    padding: 3px 24px;
+    width: 100%;
+    position: relative;
+    font-family: "Lexend Deca";
+    border-radius: 0.8rem;
+    border: 3px solid rgb(243, 184, 47);
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+}
+
+.landing-store-content .landing-store-image {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.landing-store-content .landing-store-image img {
+    height: auto
+}
+
+.landing-store .landing-store-controller {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 3rem 2rem;
+    width: 100%
+}
+
+.landing-store .landing-store-controller>div {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    align-items: center;
+    font-size: 20px
+}
+
+.landing-store .landing-store-controller .side-btn {
+    width: 80px
+}
+
+.landing-store .landing-store-controller .side-btn svg {
+    width: 100%
+}
+
+.landing-project-container {
+    margin-bottom: 7rem
+}
+
+.landing-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.landing-project .landing-content {
+    padding: 30px;
+    width: 48%;
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color);
+    border-radius: 10px;
+    margin-bottom: 5rem;
+    background-color: #0a0a0a
+}
+
+.landing-project .landing-content .landing-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px
+}
+
+.landing-project .landing-content .landing-header h2 {
+    font-size: 60px
+}
+
+.landing-project .landing-content .landing-header h2 span {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.landing-project .landing-content .landing-nft-box {
+    width: 150px
+}
+
+.landing-project .landing-content .landing-nft-box img {
+    width: 100%
+}
+
+.landing-project .landing-content p {
+    font-size: 20px;
+    letter-spacing: -.15px
+}
+
+.landing-roadmap-container {
+    background-origin: border-box;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    height: 3400px
+}
+
+.landing-roadmap-container>* {
+    position: absolute;
+    z-index: 20;
+    width: 100%
+}
+
+.landing-roadmap-container h1 {
+    margin: 7rem 0
+}
+
+.landing-roadmap-container .landing-project .landing-content {
+    width: 45%;
+    padding: 50px;
+    margin-bottom: 0;
+    background-color: #000;
+    height: 370px
+}
+
+.landing-roadmap-container .landing-project .landing-header h2 {
+    font-size: 45px
+}
+
+.landing-roadmap-container .landing-project .landing-content p {
+    font-size: 20px
+}
+
+.landing-roadmap-container .landing-project .landing-content .landing-nft-box {
+    width: 130px;
+    margin-right: 80px
+}
+
+.landing-roadmap-container .landing-project .landing-content .landing-header {
+    justify-content: space-between
+}
+
+.landing-roadmap-container .landing-project .landing-content.blank {
+    visibility: hidden
+}
+
+.landing-roadmap-container .incomplete {
+    border-color: #fff
+}
+
+.main-content .section-title {
+    font-size: 70px;
+    margin-bottom: 3rem
+}
+
+.landing-roadmap-container .landing-roadmap-progress {
+    top: 5.5%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.landing-roadmap-progress .round-box {
+    width: 80px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px
+}
+
+.landing-roadmap-progress .line-box {
+    width: 13px;
+    height: 300px;
+    background-color: #fff;
+    margin: 5px 0;
+    position: relative
+}
+
+.landing-roadmap-progress .line-box>div {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: #f3b82f;
+    background-color: var(--second-color)
+}
+
+.landing-team-container {
+    margin-top: 7rem
+}
+
+.landing-team .landing-member-container {
+    margin: auto;
+    width: 75%;
+    position: relative;
+    height: 1050px;
+    overflow: hidden
+}
+
+.landing-team .landing-member-view {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out
+}
+
+.landing-team .landing-member-view.left {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.landing-team .landing-member-view.right {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%)
+}
+
+.landing-team .landing-member-view.main {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.landing-member-container .landing-member {
+    width: 350px;
+    margin-bottom: 5rem
+}
+
+.landing-member .landing-member-image {
+    width: 100%;
+    border: 2px solid #f3b82f;
+    border: 2px solid var(--second-color);
+    border-radius: 10px
+}
+
+.landing-member .landing-member-image img {
+    width: 100%
+}
+
+.landing-member .landing-member-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem
+}
+
+.landing-member .member-name {
+    font-size: 26px
+}
+
+.landing-member .member-social {
+    width: 60px;
+    height: 60px
+}
+
+.landing-member svg {
+    width: 100%;
+    height: 100%
+}
+
+.landing-member h2 {
+    text-transform: uppercase;
+    font-size: 26px
+}
+
+.landing-member .bodyguard-list .bodyard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    border-bottom: 1px solid #f3b82f
+}
+
+.landing-member .bodyguard-list .bodyard:last-child {
+    border-bottom: 1px solid transparent
+}
+
+.landing-team .landing-member-controller {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.landing-team .landing-member-controller .side-btn {
+    width: 60px;
+    margin: 0 3rem
+}
+
+.landing-team .landing-member-controller .side-btn svg {
+    width: 100%
+}
+
+.landing-member-controller .radius-btn {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 15px
+}
+
+.landing-member-controller .radius-btn.active {
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color)
+}
+
+.landing-faq-container {
+    margin: 7rem 0 15rem
+}
+
+.landing-faq-container .landing-content {
+    border: 2px solid #f3b82f;
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    padding: 50px;
+    transition: all .3s ease-in-out;
+    height: 150px;
+    overflow: hidden;
+    margin: 4rem 0
+}
+
+.landing-faq-container .landing-content:hover {
+    height: 400px
+}
+
+.landing-faq-container .landing-content .landing-header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
+    justify-content: space-between
+}
+
+.landing-faq-container .landing-content .landing-header h2 {
+    font-size: 40px
+}
+
+.landing-faq-container .landing-content .landing-header h2 span {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.landing-faq-container .landing-content .landing-nft-box {
+    width: 50px;
+    margin-right: 80px
+}
+
+.landing-faq-container .landing-content .landing-nft-box img {
+    width: 100%
+}
+
+.landing-faq-container .landing-content p {
+    font-size: 20px;
+    display: none
+}
+
+.landing-faq-container .landing-content:hover p {
+    display: block
+}
+
+.home-banner-tag-btn {
+    display: flex;
+    justify-content: center
+}
+
+.home-banner-tag-btn .active {
+    background-color: #f3b82f;
+    background-color: var(--second-color)
+}
+
+.home-banner-tag-btn.top-action {
+    position: relative
+}
+
+.home-banner-tag-btn.top-action h2 {
+    font-size: 25px;
+    color: #fff;
+    border-bottom: 2px solid #aaa;
+    margin: 0 3.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.home-banner-tag-btn.top-action .home-banner-buy-btn {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    width: 15rem
+}
+
+.home-banner-buy-btn button {
+    border-radius: .5rem;
+    max-width: 100%;
+    margin: 0;
+    font-size: 25px
+}
+
+.home-banner {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px
+}
+
+.home-banner h1 {
+    font-size: 70px;
+    color: #fff;
+    max-width: 900px;
+    font-weight: 700
+}
+
+.home-banner h1 span {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.home-banner .active {
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    margin: 30px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: none;
+    background-color: transparent;
+    padding: 3px 24px;
+    position: relative;
+    font-family: "Lexend Deca";
+    border-radius: 0.8rem;
+    border: 3px solid rgb(243, 184, 47);
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+}
+
+.home-banner .active:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease 0s;
+    background-color: rgb(243, 184, 47);
+}
+
+/* Tokenomics */
+.tokenomics-section .token-allocation .doughnut-chart {
+    padding: 30px 0px;
+}
+
+.tokenomics-section .token-allocation .title span {
+    font-size: 25px;
+}
+
+.tokenomics-section .token-allocation .doughnut-chart {
+    margin-top: 20px;
+    position: relative;
+}
+
+.tokenomics-section .token-allocation .dex-content {
+    position: absolute;
+    top: 19%;
+    right: 13%;
+}
+
+.tokenomics-section .token-allocation .team-content {
+    position: absolute;
+    top: 39%;
+    right: 13%;
+}
+
+.tokenomics-section .token-allocation .team-content .team-title {
+    text-align: end;
+    margin-right: 10px;
+}
+
+.tokenomics-section .token-allocation .team-content .team-line {
+    width: 370px;
+    height: 1px;
+    background-color: white;
+}
+
+.tokenomics-section .token-allocation .airdrop-content {
+    position: absolute;
+    top: 8%;
+    left: 19%;
+}
+
+.tokenomics-section .token-allocation .airdrop-content .airdrop-title {
+    text-align: start;
+    margin-left: 10px;
+}
+
+.tokenomics-section .token-allocation .airdrop-content .airdrop-line {
+    width: 370px;
+    height: 1px;
+    background-color: white;
+}
+
+.tokenomics-section .token-allocation .charity-content {
+    position: absolute;
+    top: 19%;
+    left: 13%;
+}
+
+.tokenomics-section .token-allocation .charity-content .charity-title {
+    text-align: start;
+    margin-right: 10px;
+}
+
+.tokenomics-section .token-allocation .charity-content .charity-line {
+    width: 400px;
+    height: 1px;
+    background-color: white;
+}
+
+.tokenomics-section .token-allocation .pd-content {
+    position: absolute;
+    top: 70%;
+    left: 13%;
+}
+
+.tokenomics-section .token-allocation .pd-content .pd-title {
+    text-align: start;
+    margin-left: 10px;
+}
+
+.tokenomics-section .token-allocation .pd-content .pd-line {
+    width: 400px;
+    height: 1px;
+    background-color: white;
+}
+
+.tokenomics-section .token-allocation .staking-content {
+    position: absolute;
+    bottom: 9%;
+    right: 16%;
+}
+
+.tokenomics-section .token-allocation .staking-content .staking-title {
+    text-align: end;
+    margin-right: 10px;
+}
+
+.tokenomics-section .token-allocation .staking-content .staking-line {
+    width: 400px;
+    height: 1px;
+    background-color: white;
+}
+
+.tokenomics-section .token-allocation .dex-content .dex-title {
+    text-align: end;
+    margin-right: 10px;
+}
+
+.tokenomics-section .token-allocation .dex-content .dex-line {
+    width: 400px;
+    height: 1px;
+    background-color: white;
+}
+
+
+@media screen and (max-width:992px) {
+    .tokenomics-section .token-allocation .team-content {
+        position: absolute;
+        top: 39%;
+        right: -30px;
+    }
+
+    .tokenomics-section .token-allocation .team-content .team-title {
+        text-align: end;
+        margin-right: 10px;
+    }
+
+    .tokenomics-section .token-allocation .team-content .team-line {
+        /* width: 100px;
+        height: 1px;
+        background-color: white; */
+        display: none;
+    }
+
+    .tokenomics-section .token-allocation .airdrop-content {
+        position: absolute;
+        top: 0%;
+        left: 19%;
+    }
+
+    .tokenomics-section .token-allocation .airdrop-content .airdrop-title {
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    .tokenomics-section .token-allocation .airdrop-content .airdrop-line {
+        /* width: 170px;
+        height: 1px;
+        background-color: white; */
+        display: none;
+    }
+
+    .tokenomics-section .token-allocation .charity-content {
+        position: absolute;
+        top: 19%;
+        left: 13%;
+    }
+
+    .tokenomics-section .token-allocation .charity-content .charity-title {
+        text-align: start;
+        margin-right: 10px;
+    }
+
+    .tokenomics-section .token-allocation .charity-content .charity-line {
+        /* width: 100px;
+        height: 1px; */
+        display: none;
+        /* background-color: white; */
+    }
+
+    .tokenomics-section .token-allocation .pd-content {
+        position: absolute;
+        top: 70%;
+        left: -30px;
+    }
+
+    .tokenomics-section .token-allocation .pd-content .pd-title {
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    .tokenomics-section .token-allocation .pd-content .pd-line {
+        /* width: 100px; */
+        /* height: 1px; */
+        display: none;
+        /* background-color: white; */
+    }
+
+    .tokenomics-section .token-allocation .staking-content {
+        position: absolute;
+        bottom: 9%;
+        right: 13%;
+    }
+
+    .tokenomics-section .token-allocation .staking-content .staking-title {
+        text-align: end;
+        margin-right: 10px;
+    }
+
+    .tokenomics-section .token-allocation .staking-content .staking-line {
+        display: none;
+    }
+
+    .tokenomics-section .token-allocation .dex-content {
+        position: absolute;
+        top: 19%;
+        right: 13%;
+    }
+
+    .tokenomics-section .token-allocation .dex-content .dex-title {
+        text-align: end;
+        margin-right: 10px;
+    }
+
+    .tokenomics-section .token-allocation .dex-content .dex-line {
+        display: none;
+    }
+}
+
+.home-banner-staking img {
+    height: 6rem;
+    vertical-align: bottom
+}
+
+.home-banner-content .home-banner-staking .start-staking-btn {
+    max-width: 16rem !important;
+    font-size: 26px !important;
+    margin: 0px 5rem 0px 0px;
+    max-width: 22rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    background-color: var(--second-color);
+    /* margin: 30px 0px 0px; */
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: none;
+    padding: 3px 24px;
+    width: 100%;
+    position: relative;
+    font-family: "Lexend Deca";
+    border-radius: 0.8rem;
+    border: 3px solid rgb(243, 184, 47);
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+}
+
+.home-banner-content .home-banner-staking .start-staking-btn:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease 0s;
+    background-color: rgb(243, 184, 47);
+}
+
+.home-banner-image {
+    padding-top: 40px
+}
+
+.home-banner p {
+    font-size: 28px;
+    color: #fff;
+    max-width: 900px;
+    padding: 40px 0
+}
+
+/* Bottom Slider style */
+
+.bottomslider-banner .section-title {
+    font-size: 58px;
+    margin-bottom: 2rem
+}
+
+@media (max-width: 1800px) {
+    .main-content .section-title {
+        font-size: 58px;
+        margin-bottom: 2rem;
+    }
+}
+
+.bottomslider-banner .section-description {
+    font-size: 24px;
+}
+
+.bottomslider-banner .section-description .duck-tocken {
+    color: var(--second-color);
+}
+
+@media (max-width: 1800px) {
+
+    .bottomslider-banner .section-description {
+        font-size: 24px;
+    }
+}
+
+.bottomslider-banner .banner-txt p {
+    font-size: 24px;
+}
+
+@media (max-width: 1800px) {
+
+    .bottomslider-banner .banner-txt p {
+        font-size: 24px;
+    }
+}
+
+.bottomslider-banner .banner-pane img {
+    width: 550px;
+}
+
+/* 
+.bottomslider-banner .banner-pane .slick-slider,
+.slick-initialized {
+    border: 2px solid yellow;
+    padding: 100px 50px;
+    border-radius: 20px;
+    height: 650px;
+} */
+
+.bottomslider-banner .banner-pane .store-action .store-btn {
+    max-width: none;
+    width: auto;
+    padding: 10px 3rem;
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    font-size: 38px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    margin: 30px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: white;
+    font-weight: 600;
+    text-transform: none;
+    padding: 3px 24px;
+    position: relative;
+    font-family: "Lexend Deca";
+    border-radius: 0.8rem;
+    border: 3px solid rgb(243, 184, 47);
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 768px) {
+    .bottomslider-banner .banner-pane img {
+        display: none;
+    }
+
+    .bottomslider-banner .banner-pane .store-action .store-btn {
+        font-size: 20px;
+    }
+}
+
+.bottomslider-banner .slider-area {
+    position: relative;
+}
+
+
+.bottomslider-banner .slider-area .controls .next-btn,
+.prev-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: black;
+    z-index: 999;
+    border: none;
+}
+
+.bottomslider-banner .slider-area .controls .next-btn {
+    bottom: 35px;
+    right: 55px;
+}
+
+
+.bottomslider-banner .slider-area .controls .prev-btn {
+    bottom: 35px;
+    left: 35px;
+}
+
+.bottomslider-banner .slider-area .controls .next-btn svg {
+    width: 100%
+}
+
+.bottomslider-banner .slider-area .controls .prev-btn svg {
+    width: 100%
+}
+
+@media (max-width:768px) {
+    .bottomslider-banner .slider-area .controls .next-btn {
+        bottom: 15px;
+        right: 25px;
+    }
+
+    .bottomslider-banner .slider-area .controls .prev-btn {
+        bottom: 15px;
+        left: 35px;
+    }
+
+    .bottomslider-banner .slider-area .controls .next-btn svg {
+        width: 50%
+    }
+
+    .bottomslider-banner .slider-area .controls .prev-btn svg {
+        width: 50%
+    }
+}
+
+
+.bootcamp-banner h1 {
+    max-width: 1220px
+}
+
+.bootcamp-banner p {
+    max-width: 1320px;
+    font-size: 28px
+}
+
+.bootcamp-banner .home-banner-staking {
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    border-radius: .8rem;
+    margin-top: 2rem
+}
+
+.bootcamp-banner .home-banner-staking.active {
+    max-width: 25rem;
+}
+
+.bootcamp-banner .home-banner-staking button {
+    font-size: 32px;
+    margin-top: 3px;
+    color: #000
+}
+
+.bootcamp-banner .home-banner-staking .active {
+    color: #fff
+}
+
+.bootcamp-select-container {
+    display: flex;
+    margin-bottom: 5rem
+}
+
+.bootcamp-select-content {
+    color: #fff;
+    padding: 0 4rem
+}
+
+.bootcamp-select-content.second,
+.bootcamp-select-content.third {
+    border-left: 2px solid
+}
+
+.bootcamp-select-content h3 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400
+}
+
+.bootcamp-select-content p {
+    font-size: 25px;
+    padding-left: 3rem
+}
+
+.bootcamp-select-content p span {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.bootcamp-select-content.second h3,
+.bootcamp-select-content.second p {
+    color: #f3e0b5
+}
+
+.bootcamp-select-content.third h3,
+.bootcamp-select-content.third p {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.bootcamp-select-img {
+    width: 100%;
+    position: relative;
+    height: 15rem;
+    margin: 4rem auto;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+}
+
+.bootcamp-select-content.second .bootcamp-select-img {
+    border-color: #f3e0b5;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bootcamp-select-content.third .bootcamp-select-img {
+    border-color: #f3b82f;
+    border-color: var(--second-color);
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.bootcamp-select-img img {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    max-height: 16rem;
+    top: 0px;
+    border-radius: 14px;
+    object-fit: cover;
+    height: 235px;
+}
+
+.bootcamp-select-btn {
+    max-width: 10rem;
+    margin: 2rem auto
+}
+
+.bootcamp-select-btn button {
+    background-color: var(--second-color);
+    font-size: 25px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    margin: 30px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: white;
+    font-weight: 600;
+    text-transform: none;
+    padding: 3px 24px;
+    width: 100%;
+    position: relative;
+    font-family: "Lexend Deca";
+    border-radius: 0.8rem;
+    border: 3px solid rgb(243, 184, 47);
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+    max-width: 20rem;
+}
+
+.bootcamp-select-btn button:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease 0s;
+    background-color: rgb(243, 184, 47);
+}
+
+.bootcamp-status {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem
+}
+
+.bootcamp-status span {
+    font-size: 25px;
+    width: 18%
+}
+
+.bootcamp-status .bootcamp-staked {
+    font-size: 24px;
+    font-weight: 600;
+    width: 18%;
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    margin-left: 2rem
+}
+
+.process-bar h5 {
+    font-size: 30px;
+    color: #fff;
+    max-width: 900px;
+    font-weight: 700;
+    padding: 22px 0
+}
+
+.process-body {
+    height: 37px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: #d2d2d2;
+    overflow: hidden
+}
+
+.process-content {
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    position: relative
+}
+
+.process-content img {
+    position: absolute;
+    right: 0;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    transform: translateX(-96.18px);
+
+}
+
+.wallet-adapter-button-trigger {
+    font-size: 20px !important;
+    padding: 0px 10px !important;
+    height: 50px !important;
+    width: 200px !important;
+    /* -webkit-transform: translateY(-20px); */
+    /* transform: translateY(-20px); */
+    background: #4e44ce;
+    border: none;
+    border-radius: 6px
+}
+
+@media (max-width:768px) {
+    .wallet-adapter-button-trigger {
+        display: none;
+    }
+
+    .mobile-wallet-adapter-button-trigger {
+        font-size: 20px !important;
+        padding: 0px 10px !important;
+        height: 50px !important;
+        width: 200px !important;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(20px);
+        background: #4e44ce;
+        border: none;
+        border-radius: 6px;
+        /* margin-top: 25px; */
+    }
+}
+
+.partnership-content .section {
+    position: relative;
+    padding: 3rem 0 0
+}
+
+.partnership-content .section:last-of-type {
+    margin-bottom: 15rem
+}
+
+.partnership-content h2 {
+    margin: 7rem 0;
+    font-size: 70px
+}
+
+.partnership-content h3 {
+    margin: 2rem 0;
+    font-size: 30px
+}
+
+.partnership-content input {
+    margin: 0;
+    background-color: #000;
+    font-size: 24px;
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color);
+    border-radius: 15px;
+    height: 80px;
+    padding: 5px 50px;
+    width: 800px;
+    position: relative;
+    transition: all .3s ease-in-out
+}
+
+.partnership-content input:hover {
+    background-color: #f3b82f;
+    background-color: var(--second-color)
+}
+
+.partnership-content button {
+    margin: 0 4rem 0 0;
+    background-color: #000;
+    font-size: 24px;
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color);
+    border-radius: 15px;
+    height: 90px;
+    padding: 1rem 3rem
+}
+
+.partnership-content button:hover {
+    background-color: #f3b82f;
+    background-color: var(--second-color)
+}
+
+.partnership-content button.submit {
+    margin: 10rem 0 0
+}
+
+.partnership-content .active {
+    background-color: #f3b82f;
+    background-color: var(--second-color)
+}
+
+.partnership-content .file {
+    margin: 0;
+    background-color: #000;
+    font-size: 24px;
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color);
+    border-radius: 15px;
+    height: 80px;
+    width: 300px;
+    padding: 5px 100px 5px 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column
+}
+
+.partnership-content .file img {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    width: 35px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.partnership-content input[type=file] {
+    display: none
+}
+
+.partnership-content textarea {
+    margin: 0;
+    background-color: #000;
+    font-size: 24px;
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color);
+    border-radius: 15px;
+    height: 300px;
+    padding: 30px 50px;
+    width: 800px;
+    position: relative;
+    transition: all .3s ease-in-out
+}
+
+.partnership-content textarea:hover {
+    background-color: #f3b82f;
+    background-color: var(--second-color)
+}
+
+.partnership-content p {
+    font-size: 28px;
+    margin: 2rem 0;
+    line-height: 1.3
+}
+
+.partnership-content a {
+    text-decoration: underline
+}
+
+.partnership-content p span {
+    font-size: 40px;
+    font-weight: 500
+}
+
+.partnership-content .highlight {
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.footer {
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    padding: 100px 0
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    color: #fff
+}
+
+.footer-content {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 1.3
+}
+
+.footer-content span {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 3.5
+}
+
+.footer-content .contact {
+    width: 850px;
+    margin: 5px 0 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between
+}
+
+.footer-content .contact span {
+    font-size: 32px;
+    line-height: 1
+}
+
+.footer-content button {
+    /* margin: 0 4rem 0 0; */
+    font-size: 32px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    height: 70px;
+    padding: 1rem 2rem;
+    line-height: 0.8;
+    background-color: var(--second-color);
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+}
+
+.footer-content button:hover {
+    /* margin: 0 4rem 0 0; */
+    font-size: 32px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    height: 70px;
+    padding: 1rem 2rem;
+    line-height: 0.8;
+    background-color: var(--third-color);
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+}
+
+.footer-content input {
+    background-color: transparent;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 80%;
+    border-radius: 0;
+    padding: 5px 10px;
+    height: 50px
+}
+
+.footer-image {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.footer-signup-confirm-msg {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100
+}
+
+.footer-msg-container {
+    border: 3px solid #f3b82f;
+    border: 3px solid var(--second-color);
+    background: #000;
+    max-width: 100%;
+    width: 500px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+    position: relative
+}
+
+.footer-msg-container>div {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    height: 5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem 2rem
+}
+
+.footer-msg-container p {
+    width: 80%;
+    font-size: 32px;
+    margin: 60px auto 30px
+}
+
+.footer-msg-container span {
+    font-size: 20px
+}
+
+.footer-msg-container button {
+    width: 10rem;
+    height: 3rem;
+    font-size: 20px;
+    margin: 0;
+    border: 2px solid #fff;
+    background: none
+}
+
+.claim-title {
+    display: flex;
+    justify-content: space-between
+}
+
+.claim-box p {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f3b82f;
+    color: var(--second-color);
+    padding: 0 !important
+}
+
+.claim-box {
+    padding-top: 50px
+}
+
+.claim-box h2 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #f3b82f;
+    color: var(--second-color)
+}
+
+.list-title {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    padding: 40px 0
+}
+
+.list-title span {
+    font-size: 50px;
+    margin-left: 10px
+}
+
+.list-content {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.nft-card {
+    width: calc(25% - 60px);
+    margin-right: 60px;
+    margin-bottom: 60px;
+    position: relative
+}
+
+.nft-card img {
+    object-fit: contain
+}
+
+.card-action {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #f3b82f;
+    background-color: var(--second-color);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .4s
+}
+
+.card-action .action-button {
+    pointer-events: none
+}
+
+.card-action:hover,
+.card-action:hover .action-button {
+    pointer-events: auto
+}
+
+.card-action:hover {
+    opacity: 1;
+    transition: opacity .4s
+}
+
+.card-action p {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700
+}
+
+.card-action .action-button {
+    color: #000;
+    font-size: 36px;
+    background-color: transparent;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 4px solid #000;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: all .3s;
+    width: 200px
+}
+
+.card-action .action-button:hover {
+    color: #f3b82f;
+    color: var(--second-color);
+    background-color: #000;
+    transition: all .3s
+}
+
+.card-loading {
+    background: #f3b82f;
+    background: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none
+}
+
+.wallet-adapter-dropdown-list-item {
+    font-size: 20.5px !important;
+    padding: 10px 20px !important;
+    height: auto !important
+}
+
+.page-title {
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0
+}
+
+@media (max-width:1800px) {
+    .container {
+        max-width: 1360px;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .header-content a {
+        font-size: 14px
+    }
+
+    .landing-welcome .landing-content h1 {
+        font-size: 58px
+    }
+
+    .landing-welcome .landing-content p {
+        font-size: 24px
+    }
+
+    .landing-welcome .landing-buy-nft {
+        margin: 2rem 0
+    }
+
+    .landing-welcome .landing-buy-nft button {
+        font-size: 24px !important;
+        margin-right: 80px
+    }
+
+    .landing-nft-bar .landing-nft-box {
+        width: 170px
+    }
+
+    .main-content .section-title {
+        font-size: 58px;
+        margin-bottom: 2rem
+    }
+
+    .landing-store-container {
+        height: 980px
+    }
+
+    .landing-store-container p {
+        font-size: 24px
+    }
+
+    .landing-store-container .landing-store-view-container {
+        margin-top: 3rem
+    }
+
+    .landing-store-content .landing-store-info {
+        padding: 7rem 0 0 2rem
+    }
+
+    .landing-store-content .landing-store-info h2 {
+        font-size: 54px;
+        margin-bottom: 2rem
+    }
+
+    .landing-store-content .landing-store-info .store-action button {
+        font-size: 32px
+    }
+
+    .landing-project .landing-content .landing-header h2 {
+        font-size: 50px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content .landing-header h2 {
+        font-size: 36px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content .landing-nft-box {
+        width: 100px;
+        margin-right: 50px
+    }
+
+    .landing-roadmap-container .landing-roadmap-progress {
+        top: 5.5%
+    }
+
+    .landing-team .landing-member-container {
+        height: 920px
+    }
+
+    .landing-member-container .landing-member {
+        width: 300px;
+        margin-bottom: 4rem
+    }
+
+    .landing-member .member-name {
+        font-size: 20px
+    }
+
+    .landing-member .member-social {
+        width: 50px;
+        height: 50px
+    }
+
+    .landing-faq-container .landing-content .landing-header h2 {
+        font-size: 36px
+    }
+
+    .landing-faq-container .landing-content p {
+        font-size: 19px
+    }
+
+    .whitepaper-content h2 {
+        font-size: 58px
+    }
+
+    .whitepaper-content p {
+        font-size: 24px
+    }
+
+    .home-banner h1 {
+        font-size: 58px
+    }
+
+    .home-banner p {
+        font-size: 24px
+    }
+
+    .bootcamp-status span {
+        width: 21%;
+        font-size: 20px
+    }
+
+    .bootcamp-status .bootcamp-staked {
+        width: 21%
+    }
+
+    .bootcamp-select-content p {
+        font-size: 20px
+    }
+
+    .partnership-content h2 {
+        font-size: 58px
+    }
+
+    .partnership-content p {
+        font-size: 24px
+    }
+
+    .footer-content .contact {
+        width: 700px
+    }
+
+    .footer-msg-container p {
+        font-size: 32px;
+        margin: 60px auto 30px
+    }
+
+    .footer-msg-container span {
+        font-size: 20px
+    }
+
+    .footer-msg-container button {
+        width: 10rem;
+        height: 3rem;
+        font-size: 20px
+    }
+}
+
+@media (max-width:1440px) {
+    .container {
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .wallet-adapter-button-trigger {
+        font-size: 16px !important;
+        padding: 10px 5px !important;
+        width: 150px !important;
+        height: 40px !important
+    }
+
+    .landing-welcome .landing-content h1 {
+        font-size: 46px
+    }
+
+    .landing-welcome .landing-content p {
+        font-size: 18px
+    }
+
+    .landing-welcome .landing-nft-bar-container {
+        height: 150px;
+        margin: 5rem 0 2rem
+    }
+
+    .landing-nft-bar .landing-nft-box {
+        width: 130px
+    }
+
+    .landing-welcome .landing-buy-nft button {
+        font-size: 20px !important;
+        max-width: 18rem !important;
+        margin-right: 50px
+    }
+
+    .main-content .section-title {
+        font-size: 46px
+    }
+
+    .landing-store-container {
+        height: 950px
+    }
+
+    .landing-store-container .landing-store-info p {
+        font-size: 18px
+    }
+
+    .landing-store .landing-store-controller .side-btn {
+        width: 50px
+    }
+
+    .landing-store .landing-store-controller>div {
+        width: 180px
+    }
+
+    .landing-store-content .landing-store-info .store-action button {
+        font-size: 24px
+    }
+
+    .landing-store-content .landing-store-info h2 {
+        font-size: 46px
+    }
+
+    .landing-project-container {
+        margin-bottom: 4rem
+    }
+
+    .landing-project .landing-content .landing-header h2 {
+        font-size: 42px
+    }
+
+    .landing-project .landing-content .landing-nft-box {
+        width: 100px
+    }
+
+    .landing-project .landing-content p {
+        font-size: 18px
+    }
+
+    .landing-roadmap-container {
+        height: 3300px
+    }
+
+    .landing-roadmap-container h1 {
+        margin: 5rem 0
+    }
+
+    .landing-roadmap-container .landing-project .landing-content .landing-header h2 {
+        font-size: 30px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content .landing-nft-box {
+        width: 70px;
+        margin-right: 0
+    }
+
+    .landing-roadmap-container .landing-project .landing-content p {
+        font-size: 17px
+    }
+
+    .landing-roadmap-container .landing-roadmap-progress {
+        top: 5.5%
+    }
+
+    .landing-roadmap-progress .round-box {
+        width: 70px;
+        height: 50px
+    }
+
+    .landing-roadmap-progress .line-box {
+        width: 10px;
+        height: 310px
+    }
+
+    .landing-team-container {
+        margin-top: 5rem
+    }
+
+    .landing-team .landing-member-container {
+        height: 780px
+    }
+
+    .landing-member-container .landing-member {
+        width: 220px
+    }
+
+    .landing-member .member-name {
+        font-size: 18px
+    }
+
+    .landing-member h2 {
+        font-size: 20px
+    }
+
+    .landing-member-controller .radius-btn {
+        width: 20px;
+        height: 20px
+    }
+
+    .landing-team .landing-member-controller .side-btn {
+        width: 50px;
+        margin: 0 2rem
+    }
+
+    .landing-faq-container {
+        margin: 5rem 0 10rem
+    }
+
+    .landing-faq-container .landing-content {
+        padding: 40px;
+        height: 120px;
+        margin: 3rem 0
+    }
+
+    .landing-faq-container .landing-content .landing-nft-box {
+        width: 40px;
+        margin-right: 40px
+    }
+
+    .landing-faq-container .landing-content .landing-header h2 {
+        font-size: 32px
+    }
+
+    .landing-faq-container .landing-content p {
+        font-size: 16px
+    }
+
+    .whitepaper-content h2 {
+        font-size: 46px
+    }
+
+    .whitepaper-content h3 {
+        font-size: 36px
+    }
+
+    .whitepaper-content p {
+        font-size: 18px
+    }
+
+    .home-banner h1 {
+        font-size: 46px;
+        max-width: 700px
+    }
+
+    .home-banner p {
+        font-size: 18px;
+        max-width: 500px;
+        padding: 30px 0
+    }
+
+    .home-banner .process-body {
+        width: 500px
+    }
+
+    .home-banner-staking button {
+        max-width: 16rem !important;
+        font-size: 26px !important;
+        margin: 0px 5rem 0px 0px;
+        max-width: 22rem;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        outline: 0px;
+        /* margin: 30px 0px 0px; */
+        cursor: pointer;
+        user-select: none;
+        vertical-align: middle;
+        appearance: none;
+        text-decoration: none;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        min-width: 64px;
+        color: white;
+        font-size: 36px;
+        font-weight: 600;
+        text-transform: none;
+        padding: 3px 24px;
+        width: 100%;
+        position: relative;
+        font-family: "Lexend Deca";
+        border-radius: 0.8rem;
+        border: 3px solid rgb(243, 184, 47);
+        z-index: 15;
+        transition: all 0.3s ease 0s;
+    }
+
+    .list-title {
+        font-size: 50px
+    }
+
+    .claim-box h2 {
+        font-size: 70px
+    }
+
+    .claim-title img {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    .bootcamp-select-content {
+        width: 500px;
+        margin: 50px auto 100px
+    }
+
+    .bootcamp-select-content h3 {
+        font-size: 22px
+    }
+
+    .bootcamp-select-content p {
+        font-size: 14px;
+        padding-left: 1rem
+    }
+
+    .bootcamp-select-img {
+        height: 10rem;
+        margin: 2rem auto
+    }
+
+    .bootcamp-select-btn {
+        max-width: 7rem;
+        margin: 1rem auto
+    }
+
+    .bootcamp-select-btn button {
+        font-size: 18px
+    }
+
+    .bootcamp-banner .home-banner-staking.active {
+        width: 15rem
+    }
+
+    .bootcamp-banner .home-banner-staking button {
+        font-size: 16px !important;
+        padding: 10px 0;
+        width: 15rem
+    }
+
+    .bootcamp-status .bootcamp-staked,
+    .bootcamp-status span {
+        width: 30%
+    }
+
+    .partnership-content h2 {
+        font-size: 46px;
+        margin: 4rem 0
+    }
+
+    .partnership-content h3 {
+        margin: 1rem 0;
+        font-size: 20px
+    }
+
+    .partnership-content p {
+        font-size: 18px
+    }
+
+    .partnership-content input {
+        font-size: 18px;
+        height: 60px;
+        padding: 5px 30px;
+        width: 500px
+    }
+
+    .partnership-content button {
+        margin: 0 3rem 0 0;
+        font-size: 18px;
+        height: 60px;
+        width: 100px;
+        padding: 1rem
+    }
+
+    .partnership-content textarea {
+        font-size: 18px;
+        height: 300px;
+        padding: 20px 30px;
+        width: 500px
+    }
+
+    .partnership-content .file {
+        font-size: 18px;
+        height: 60px;
+        width: 200px;
+        padding: 5px 60px 5px 30px
+    }
+
+    .partnership-content .file img {
+        right: 1rem;
+        width: 25px
+    }
+
+    .partnership-content button.submit {
+        margin: 4rem 0 0
+    }
+
+    .partnership-content .section:last-of-type {
+        margin-bottom: 10rem
+    }
+
+    .footer-image img {
+        width: 150px !important
+    }
+
+    .footer-content {
+        font-size: 38px
+    }
+
+    .footer-content .contact {
+        width: 500px
+    }
+
+    .footer-content span {
+        font-size: 24px
+    }
+
+    .footer-content .contact span {
+        font-size: 28px
+    }
+
+    .footer-content input {
+        font-size: 20px;
+        height: 40px
+    }
+
+    .footer-content button {
+        font-size: 20px !important;
+        width: 230px
+    }
+
+    .footer-msg-container p {
+        font-size: 32px;
+        margin: 60px auto 30px
+    }
+
+    .footer-msg-container span {
+        font-size: 20px
+    }
+
+    .footer-msg-container button {
+        width: 10rem;
+        height: 3rem;
+        font-size: 20px;
+        margin: 0
+    }
+
+    .home-banner-image img {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+}
+
+@media (max-width:1156px) {
+    .container {
+        max-width: 870px;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .header-content .header-buy-btn {
+        top: 145%
+    }
+
+    .header-buy-btn button {
+        font-size: 15px !important;
+        padding: 0 !important;
+        width: 140px;
+        height: 40px
+    }
+
+    .header-buy-btn button.link {
+        width: 220px;
+        padding: 13px 10px !important;
+        height: 40px;
+        font-size: 13px !important
+    }
+
+    .header-content a {
+        font-size: 9px
+    }
+
+    .header-content a:hover {
+        border-bottom: 1px solid #f3b82f;
+        border-bottom: 1px solid var(--second-color)
+    }
+
+    .header-content .logo img {
+        width: 120px
+    }
+
+    .header-follow {
+        padding-top: 3px
+    }
+
+    .header-follow a {
+        margin-right: 8px
+    }
+
+    .header-follow a svg {
+        width: 20px;
+        height: 20px
+    }
+
+    .header-follow a:last-of-type svg {
+        width: 28px
+    }
+
+    .wallet-adapter-button-trigger {
+        font-size: 14px !important;
+        padding: 10px 5px !important;
+        width: 140px !important;
+        height: 40px !important
+    }
+
+    .landing-welcome .landing-content h1 {
+        font-size: 40px
+    }
+
+    .landing-welcome .landing-content p {
+        font-size: 20px
+    }
+
+    .landing-store-content .landing-store-info h2,
+    .main-content .section-title {
+        font-size: 40px
+    }
+
+    .landing-store-content .landing-store-info .store-name {
+        height: calc(100% - 250px)
+    }
+
+    .landing-store-container {
+        height: 850px
+    }
+
+    .landing-store-container .landing-store-info p,
+    .landing-store-container p {
+        font-size: 20px
+    }
+
+    .landing-store .landing-store-controller {
+        padding: 1rem 2rem
+    }
+
+    .landing-store-view .landing-store {
+        height: 570px
+    }
+
+    .landing-project-container {
+        margin-bottom: 2rem
+    }
+
+    .landing-project .landing-content .landing-header h2 {
+        font-size: 28px
+    }
+
+    .landing-project .landing-content .landing-nft-box {
+        width: 90px
+    }
+
+    .landing-project .landing-content p {
+        font-size: 16px
+    }
+
+    .landing-roadmap-container {
+        height: 3250px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content .landing-header h2 {
+        font-size: 24px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content .landing-nft-box {
+        width: 50px;
+        margin-right: 0
+    }
+
+    .landing-roadmap-container .landing-project .landing-content p {
+        font-size: 16px
+    }
+
+    .landing-roadmap-progress .round-box {
+        width: 50px;
+        height: 40px
+    }
+
+    .landing-roadmap-progress .line-box {
+        height: 320px
+    }
+
+    .landing-roadmap-container .landing-roadmap-progress {
+        top: 5.5%
+    }
+
+    .landing-team .landing-member-container {
+        height: 700px
+    }
+
+    .landing-member .member-name {
+        font-size: 16px
+    }
+
+    .landing-member h2 {
+        font-size: 18px
+    }
+
+    .landing-member-container .landing-member {
+        width: 200px
+    }
+
+    .landing-member .bodyguard-list .bodyard {
+        margin-top: 0
+    }
+
+    .landing-team .landing-member-controller .side-btn {
+        width: 35px;
+        margin: 0 1rem
+    }
+
+    .landing-member-controller .radius-btn {
+        width: 17px;
+        height: 17px;
+        margin: 0 10px
+    }
+
+    .landing-faq-container .landing-content {
+        padding: 30px;
+        height: 100px;
+        margin: 2rem 0
+    }
+
+    .landing-faq-container .landing-content .landing-nft-box {
+        width: 30px;
+        margin-right: 30px
+    }
+
+    .landing-faq-container .landing-content .landing-header h2 {
+        font-size: 30px
+    }
+
+    .landing-faq-container .landing-content p {
+        font-size: 15px
+    }
+
+    .whitepaper-content h2 {
+        margin: 4rem 0;
+        font-size: 40px
+    }
+
+    .whitepaper-content h3 {
+        margin: 3rem 0;
+        font-size: 30px
+    }
+
+    .whitepaper-content .section {
+        padding: 3rem 0 0
+    }
+
+    .home-banner {
+        padding-top: 0px !important;
+        flex-direction: column;
+        padding-bottom: 0
+    }
+
+    .home-banner h1 {
+        font-size: 40px;
+        max-width: 610px
+    }
+
+    .home-banner-staking img {
+        height: 4rem
+    }
+
+    .process-body {
+        width: 100%
+    }
+
+    .process-bar h5 {
+        font-size: 24px
+    }
+
+    .nft-card {
+        width: calc(50% - 30px);
+        margin-right: 30px;
+        margin-bottom: 30px
+    }
+
+    .card-action p {
+        font-size: 20px
+    }
+
+    .card-action .action-button {
+        font-size: 20px;
+        width: 150px
+    }
+
+    .bootcamp-select-container {
+        display: block
+    }
+
+    .bootcamp-select-content,
+    .bootcamp-select-content.second,
+    .bootcamp-select-content.third {
+        border: none;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 4rem
+    }
+
+    .bootcamp-select-content h3 {
+        font-size: 30px
+    }
+
+    .bootcamp-select-content p {
+        font-size: 18px
+    }
+
+    .bootcamp-select-img {
+        height: 16rem;
+        margin: 3rem auto
+    }
+
+    .bootcamp-banner h1 {
+        font-size: 40px
+    }
+
+    .bootcamp-banner .home-banner-staking.active {
+        width: 18rem
+    }
+
+    .bootcamp-banner .home-banner-staking button {
+        max-width: 18rem !important;
+        width: 18rem
+    }
+
+    .bootcamp-status {
+        display: block;
+        width: 281px;
+        margin: auto auto 5rem
+    }
+
+    .bootcamp-status span {
+        width: 100%
+    }
+
+    .bootcamp-status .bootcamp-staked {
+        width: 100%;
+        margin: 2rem 0
+    }
+
+    .partnership-content h2 {
+        margin: 4rem 0;
+        font-size: 40px
+    }
+
+    .partnership-content p span {
+        font-size: 20px;
+        font-weight: 500
+    }
+
+    .footer-content {
+        font-size: 32px
+    }
+
+    .footer-content .contact {
+        width: 400px
+    }
+
+    .footer-content .contact span,
+    .footer-content span {
+        font-size: 22px
+    }
+
+    .footer-content input {
+        font-size: 16px;
+        height: 30px
+    }
+
+    .footer-content button {
+        font-size: 20px !important;
+        max-width: 15rem !important
+    }
+}
+
+@media (max-width:900px) {
+    .container {
+        max-width: 375px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .header-content .logo {
+        margin: auto;
+        left: 50%;
+        z-index: 110
+    }
+
+    .header-content.active .logo {
+        -webkit-transform: translate(-66%, 24px);
+        transform: translate(-66%, 24px);
+        position: fixed
+    }
+
+    .header-content>.nav-bar {
+        display: none
+    }
+
+    .header-content .header-buy-btn {
+        top: 60%;
+        z-index: 110;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px)
+    }
+
+    .header-content.active .header-buy-btn {
+        top: 5%;
+        left: calc(50% + 187.5px);
+        right: auto;
+        -webkit-transform: translate(-100%, 26px);
+        transform: translate(-100%, 26px);
+        position: fixed
+    }
+
+    .header-buy-btn button {
+        font-size: 7px !important;
+        padding: 7px 5px !important;
+        height: 20px;
+        width: 80px;
+        margin: 0
+    }
+
+    .header-buy-btn button.link {
+        font-size: 7px !important;
+        padding: 8px 12px !important;
+        height: 25px;
+        width: 120px;
+        margin-top: 10px
+    }
+
+    .wallet-adapter-button-trigger {
+        font-size: 7px !important;
+        padding: 7px 5px !important;
+        height: 20px !important;
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+        width: 80px !important;
+        left: calc(50% + 187.5px);
+        z-index: 110
+    }
+
+    .header-content.active .wallet-adapter-button-trigger {
+        -webkit-transform: translate(-100%, 9px);
+        transform: translate(-100%, 9px);
+        position: fixed
+    }
+
+    .wallet-adapter-button-trigger i {
+        margin-right: 0;
+        width: 15px
+    }
+
+    .wallet-adapter-button-trigger i img {
+        width: 15px;
+        height: 15px
+    }
+
+    .header-mobile-nav-bar {
+        position: fixed;
+        background: #000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: 90px 40px 20px;
+        z-index: 100
+    }
+
+    .header-content.active .header-mobile-nav-bar,
+    .header-mobile-nav-bar:hover {
+        display: flex
+    }
+
+    .header-mobile-nav-bar .nav-bar {
+        font-size: 14px;
+        margin: 10px 0
+    }
+
+    .header-mobile-nav-bar .header-follow a {
+        margin-right: 20px
+    }
+
+    .header-mobile-nav-bar .header-follow a svg {
+        width: 30px;
+        height: 30px
+    }
+
+    .header-mobile-nav-bar-content {
+        max-width: 375px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column
+    }
+
+    .header-content .menu {
+        z-index: 110
+    }
+
+    .header-content.active .menu {
+        position: fixed;
+        top: 42px
+    }
+
+    .header-content .menu svg {
+        width: 40px;
+        height: 40px
+    }
+
+    .header-content .menu:hover .header-mobile-nav-bar {
+        display: flex
+    }
+
+    .landing-welcome .landing-content h1 {
+        font-size: 28px
+    }
+
+    .landing-welcome .landing-content p {
+        font-size: 14px
+    }
+
+    .landing-welcome .landing-buy-nft {
+        margin: 0;
+        justify-content: space-around
+    }
+
+    .landing-welcome .landing-buy-nft button {
+        font-size: 12px !important;
+        max-width: 10rem !important;
+        margin-right: 0
+    }
+
+    .landing-welcome .landing-nft-bar-container {
+        height: 100px;
+        margin: 3rem 0 0
+    }
+
+    .landing-welcome .landing-nft-bar {
+        margin: 3rem 0;
+        flex-wrap: wrap
+    }
+
+    .landing-welcome .landing-nft-bar.left,
+    .landing-welcome .landing-nft-bar.left-back,
+    .landing-welcome .landing-nft-bar.main,
+    .landing-welcome .landing-nft-bar.right {
+        top: -3rem
+    }
+
+    .landing-nft-bar .landing-nft-box {
+        width: 80px
+    }
+
+    .main-content .section-title {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 2rem
+    }
+
+    .landing-store-container {
+        margin-top: 4rem;
+        height: 720px
+    }
+
+    .landing-store-container p {
+        font-size: 14px;
+        text-align: center
+    }
+
+    .landing-store-container .landing-store-view-container {
+        margin-top: 2rem
+    }
+
+    .landing-store-view .landing-store {
+        height: 470px
+    }
+
+    .landing-store .landing-store-content {
+        display: block
+    }
+
+    .landing-store-container .landing-store-info p {
+        font-size: 14px
+    }
+
+    .landing-store-content .landing-store-info {
+        padding: 2rem 0 0;
+        text-align: center
+    }
+
+    .landing-store-content .landing-store-info h2 {
+        font-size: 26px
+    }
+
+    .landing-store-content .landing-store-info .store-name {
+        height: 120px
+    }
+
+    .landing-store-content .landing-store-info .store-action button {
+        font-size: 16px
+    }
+
+    .landing-store .landing-store-controller {
+        padding: 1rem
+    }
+
+    .landing-store .landing-store-controller>div span {
+        visibility: hidden
+    }
+
+    .landing-store .landing-store-controller .side-btn {
+        width: 30px
+    }
+
+    .landing-store-container .landing-store-view-left-overlay,
+    .landing-store-container .landing-store-view-right-overlay {
+        height: 600px
+    }
+
+    .landing-project {
+        display: block
+    }
+
+    .landing-project-container {
+        margin-bottom: 5rem
+    }
+
+    .landing-project .landing-content {
+        width: 100%;
+        margin-bottom: 2rem
+    }
+
+    .landing-project .landing-content .landing-header {
+        margin: 0 0 10px
+    }
+
+    .landing-project .landing-content .landing-header h2 {
+        font-size: 28px
+    }
+
+    .landing-project .landing-content p {
+        font-size: 14px
+    }
+
+    .landing-project .landing-content .landing-nft-box {
+        width: 75px
+    }
+
+    .landing-roadmap-container {
+        height: 2600px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content {
+        width: 85%;
+        padding: 25px 20px;
+        height: 280px;
+        margin-bottom: 1rem
+    }
+
+    .landing-roadmap-container .landing-project .landing-content:nth-child(odd) .landing-nft-box {
+        margin-right: 20px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content .landing-header h2 {
+        font-size: 18px
+    }
+
+    .landing-roadmap-container .landing-project .landing-content p {
+        font-size: 12px;
+        width: 90%;
+        line-height: 1.5
+    }
+
+    .landing-roadmap-container .landing-project .landing-content.blank {
+        display: none
+    }
+
+    .landing-roadmap-container .landing-roadmap-progress {
+        top: 5.5%;
+        left: auto;
+        right: -5%
+    }
+
+    .landing-roadmap-progress .round-box {
+        width: 40px;
+        height: 30px
+    }
+
+    .landing-roadmap-progress .line-box {
+        height: 255px
+    }
+
+    .landing-team .landing-member-container {
+        height: 720px;
+        width: 100%
+    }
+
+    .landing-member-container .landing-member {
+        width: 160px;
+        margin-bottom: 2rem
+    }
+
+    .landing-member .landing-member-info {
+        margin-top: 1rem
+    }
+
+    .landing-member .member-name {
+        font-size: 11px
+    }
+
+    .landing-member .member-social {
+        width: 30px;
+        height: 30px
+    }
+
+    .landing-member h2 {
+        font-size: 13px
+    }
+
+    .landing-team .landing-member-controller .side-btn {
+        width: 30px
+    }
+
+    .landing-member-controller .radius-btn {
+        width: 13px;
+        height: 13px;
+        margin: 0 5px
+    }
+
+    .landing-faq-container {
+        margin: 3rem 0 5rem
+    }
+
+    .landing-faq-container .landing-content .landing-header h2 {
+        font-size: 14px
+    }
+
+    .landing-faq-container .landing-content {
+        padding: 32px 10px;
+        height: 90px;
+        margin: 2rem 0
+    }
+
+    .landing-faq-container .landing-content .landing-nft-box {
+        width: 20px;
+        margin-right: 10px
+    }
+
+    .landing-faq-container .landing-content p {
+        font-size: 12px
+    }
+
+    .landing-faq-container .landing-content:hover {
+        height: 350px
+    }
+
+    .whitepaper-content .section {
+        padding: 3rem 0 0
+    }
+
+    .whitepaper-content .section:before {
+        height: 7px
+    }
+
+    .whitepaper-content .section:last-of-type {
+        margin-bottom: 7rem
+    }
+
+    .whitepaper-content h2 {
+        margin: 3rem 0;
+        font-size: 30px
+    }
+
+    .whitepaper-content h3 {
+        margin: 1rem 0;
+        font-size: 24px
+    }
+
+    .whitepaper-content p {
+        font-size: 14px
+    }
+
+    .whitepaper-content p span {
+        font-size: 20px;
+        font-weight: 500
+    }
+
+    .home-banner-staking button {
+        max-width: 15rem !important;
+        font-size: 24px !important;
+        margin-right: 2rem !important
+    }
+
+    .home-banner-image img {
+        width: 40%
+    }
+
+    .claim-box h2 {
+        font-size: 50px
+    }
+
+    .claim-box button {
+        width: 80% !important;
+        font-size: 24px !important
+    }
+
+    .home-banner .process-body {
+        width: 100%
+    }
+
+    .bootcamp-select-content {
+        width: 100%;
+        margin: 0 0 100px;
+        padding: 0 0 80px
+    }
+
+    .home-banner h1 {
+        font-size: 30px
+    }
+
+    .list-title {
+        font-size: 35px
+    }
+
+    .list-title span {
+        font-size: 35px;
+        margin-left: 10px
+    }
+
+    .bootcamp-banner .home-banner-staking,
+    .bootcamp-banner .home-banner-staking.active {
+        width: 15rem
+    }
+
+    .bootcamp-banner .home-banner-staking button {
+        max-width: 15rem !important;
+        font-size: 14px !important;
+        padding: 10px 0
+    }
+
+    .bootcamp-select-content h3 {
+        font-size: 24px
+    }
+
+    .nft-card {
+        width: calc(100% - 30px);
+        margin-right: 30px;
+        margin-bottom: 30px
+    }
+
+    .partnership-content .section {
+        padding: 2rem 0 0
+    }
+
+    .partnership-content .section:last-of-type {
+        margin-bottom: 3rem
+    }
+
+    .partnership-content h2 {
+        margin: 3rem 0;
+        font-size: 30px
+    }
+
+    .partnership-content h3 {
+        margin: 1rem 0;
+        font-size: 20px
+    }
+
+    .partnership-content p {
+        font-size: 14px
+    }
+
+    .partnership-content p span {
+        font-size: 20px;
+        font-weight: 500
+    }
+
+    .partnership-content input {
+        font-size: 16px;
+        padding: 5px 30px;
+        width: 100%
+    }
+
+    .partnership-content button {
+        margin: 0 1rem 0 0;
+        font-size: 16px;
+        height: 60px;
+        padding: .5rem
+    }
+
+    .partnership-content button.submit {
+        margin: 3rem 0 0
+    }
+
+    .partnership-content .file {
+        font-size: 16px;
+        height: 60px;
+        width: 200px;
+        padding: 5px 50px 5px 30px
+    }
+
+    .partnership-content .file img {
+        right: 2rem;
+        width: 20px
+    }
+
+    .partnership-content textarea {
+        font-size: 16px;
+        height: 400px;
+        padding: 10px 30px;
+        width: 100%
+    }
+
+    .footer-body {
+        display: block
+    }
+
+    .footer-content {
+        text-align: center
+    }
+
+    .footer-content .contact {
+        width: 100%
+    }
+
+    .footer-content button {
+        float: none;
+        margin: 20px 0 40px
+    }
+
+    .footer-msg-container p {
+        font-size: 24px;
+        margin: 50px auto 30px
+    }
+
+    .footer-msg-container span {
+        font-size: 14px
+    }
+
+    .footer-msg-container button {
+        width: 5rem;
+        height: 3rem;
+        font-size: 14px;
+        margin: 0
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 0
+    }
+
+    to {
+        left: 100%
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        left: 0
+    }
+
+    to {
+        left: 100%
+    }
+}
+
+@keyframes left-move {
+    0% {
+        left: -100%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@-webkit-keyframes left-move {
+    0% {
+        left: -100%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes left-back-move {
+    0% {
+        left: -200%
+    }
+
+    to {
+        left: -100%
+    }
+}
+
+@-webkit-keyframes left-back-move {
+    0% {
+        left: -200%
+    }
+
+    to {
+        left: -100%
+    }
+}
+
+@keyframes right-move {
+    0% {
+        left: 100%
+    }
+
+    to {
+        left: 200%
+    }
+}
+
+@-webkit-keyframes right-move {
+    0% {
+        left: 100%
+    }
+
+    to {
+        left: 200%
+    }
+}
+
+button.full-close-cta {
+    left: 20px;
+    background: #c00
+}
+
+button.full-close-cta,
+button.full-width-cta {
+    position: absolute;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff
+}
+
+button.full-width-cta {
+    left: 60px;
+    background: #000
+}
+
+.MuiPaper-root {
+    background-color: #000 !important;
+    border-color: #000 !important
+}

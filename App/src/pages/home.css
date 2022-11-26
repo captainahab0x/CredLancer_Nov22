@@ -1,0 +1,342 @@
+/* Looper styles */
+@keyframes slideAnim {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.looper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.looper__innerList {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+    animation: slideAnim linear infinite;
+}
+
+.looper__listInstance {
+    display: flex;
+    width: max-content;
+
+    animation: none;
+}
+
+
+/* Example content styles */
+:root {
+    --green: #59C3C3;
+    --offwhite: #EBEBEB;
+    --red: #e65a5e;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.contentBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin: 10px;
+    padding: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.contentBlock--one {
+    width: 120px;
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contentBlock--one:last-of-type {
+    color: var(--green);
+    margin-right: 36px;
+}
+
+.contentBlock--two {
+    color: var(--green);
+    font-size: 48px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/*  Top Slider Style */
+.landing-buy-nft button {
+    border-radius: 10px;
+}
+
+
+/* Bottom Slider Style */
+
+
+/* Roadmap style */
+
+.roadmap .roadmap-title,
+.roadmap-description {
+    text-align: center;
+    color: var(--second-color);
+}
+
+.roadmap .roadmap-title,
+h1 {
+    color: var(--second-color);
+}
+
+.roadmap .roadmap-description span {
+    color: var(--second-color);
+}
+
+
+.roadmap .road-main {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.roadmap .road-step {
+    position: relative;
+    width: 14%;
+}
+
+.roadmap .rect-rotate-45 {
+    width: 10px;
+    height: 10px;
+    background-color: var(--second-color);
+    rotate: -45deg;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+}
+
+.roadmap .vertical-line.even {
+    width: 2px;
+    height: 300px;
+    margin-top: 150px;
+    background: var(--second-color);
+    position: relative;
+}
+
+.roadmap .vertical-line {
+    width: 2px;
+    height: 300px;
+    background: var(--second-color);
+    position: relative;
+}
+
+.roadmap-content {
+    position: relative;
+}
+
+.roadmap-img {
+    position: relative;
+    height: 30px;
+}
+
+.roadmap-img img {
+    position: absolute;
+    top: -50px;
+    left: 39%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width:992px) {
+    .roadmap-img img {
+        /* position: absolute;
+        top: -50px;
+        left: calc(50%-50px);
+        margin-right: auto;
+        margin-left: auto; */
+        display: none;
+    }
+}
+
+.roadmap .road-main .middle-thick-bar {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 15px;
+    background: var(--second-color);
+    /* background: rgb(243, 184, 47); */
+    background: linear-gradient(90deg, rgba(243, 184, 47, 1) 0%, rgba(83, 72, 48, 1) 10%, rgba(243, 184, 47, 1) 19%, rgba(91, 91, 91, 1) 31%, rgba(243, 184, 47, 1) 43%, rgba(190, 150, 57, 1) 52%, rgba(243, 184, 47, 1) 61%, rgba(82, 84, 84, 1) 71%, rgba(243, 184, 47, 1) 83%);
+    z-index: -1;
+}
+
+.roadmap .road-main .road-date {
+    margin-top: 150px;
+    margin-left: 10px;
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.roadmap .road-main .road-content.even {
+    margin-top: 70px;
+    margin-left: 10px;
+    color: var(--second-color) !important;
+}
+
+.roadmap .road-main .road-content.odd {
+    margin-top: 0px;
+    margin-left: 10px;
+    color: var(--second-color) !important;
+}
+
+.roadmap .road-main .road-content .road-title {
+    color: var(--second-color) !important;
+    font-weight: bold;
+}
+
+.roadmap .road-main .road-content .content-lists span {
+    color: var(--second-color) !important;
+}
+
+
+.roadmap .road-step .road-part.even {
+    padding-top: 175px;
+}
+
+/* Roadmap mobile */
+@media screen and (max-width:920px) {
+    .roadmap .road-step {
+        position: relative;
+        width: 100%;
+    }
+
+    .roadmap .road-step .road-part {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px 0px;
+        gap: 50px;
+    }
+
+    .roadmap .road-step .road-part.even {
+        padding-top: 0px;
+    }
+
+    .roadmap .road-step .road-part.odd {
+        flex-direction: row-reverse !important;
+    }
+
+    .roadmap .road-step .road-section {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .roadmap .road-main {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .roadmap .vertical-line.even {
+        width: 100%;
+        height: 2px;
+        margin-top: 0px;
+        background: var(--second-color);
+        position: relative;
+    }
+
+    .roadmap .vertical-line {
+        width: 100%;
+        height: 2px;
+        background: var(--second-color);
+        position: relative;
+    }
+
+    .roadmap .road-main .middle-thick-bar {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        width: 15px;
+        height: 100%;
+        background: var(--second-color);
+        /* background: rgb(243, 184, 47); */
+        background: linear-gradient(180deg, rgba(243, 184, 47, 1) 0%, rgba(83, 72, 48, 1) 10%, rgba(243, 184, 47, 1) 19%, rgba(91, 91, 91, 1) 31%, rgba(243, 184, 47, 1) 43%, rgba(190, 150, 57, 1) 52%, rgba(243, 184, 47, 1) 61%, rgba(82, 84, 84, 1) 71%, rgba(243, 184, 47, 1) 83%);
+        z-index: -1;
+    }
+
+    .roadmap .road-main .road-date {
+        margin-top: 0px;
+        margin-left: 10px;
+        color: var(--second-color);
+        font-size: 18px;
+        font-weight: bold;
+        width: 40%;
+    }
+
+    .roadmap .road-main .road-content {
+        width: 40%;
+    }
+
+    .roadmap .road-main .road-content.even {
+        margin-top: 0px;
+        margin-left: 10px;
+        color: var(--second-color) !important;
+
+    }
+
+    .roadmap .road-main .road-content.odd {
+        margin-top: 0px;
+        margin-left: 10px;
+        color: var(--second-color) !important;
+        flex-direction: row-reverse !important;
+    }
+}
+
+/* FAQ */
+.faq-pair {
+    border: 3px solid var(--second-color);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.faq-answer {
+    margin-top: 25px;
+}
+
+.yellow-dropdown-btn {
+    width: 50px;
+    margin-right: 80px;
+    background: #000;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .yellow-dropdown-btn {
+        width: 50px;
+        margin-right: 0px;
+        background: #000;
+        border: none;
+    }
+}
+
+
+.yellow-drop-mark-icon-reverse {
+    rotate: 180deg;
+}
