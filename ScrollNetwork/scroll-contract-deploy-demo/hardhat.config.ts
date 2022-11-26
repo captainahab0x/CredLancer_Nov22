@@ -21,6 +21,10 @@ const config: HardhatUserConfig = {
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    mumbai: {
+      url: process.env.API_URL_MUMBAI,
+      accounts: [`0x${process.env.PRIVATE_KEY_MUMBAI}`],
+    }
   },
 };
 
