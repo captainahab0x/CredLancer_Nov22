@@ -1,12 +1,13 @@
-# Deploy Dapp
 
-> You can found my website here:
- https://m1rn4.github.io/Set-up-adn-mobile-first/
+# CredLancer
+CredLancer aims to deliver tamper-proof credentials, showcase professional development and achievement, while maintaining data privacy and sovereignty. We aim to address three major problems:
 
+The lack of trust and verifiability in professional credentials
+Difficulty in demonstrating professional development and achievements
+Lack of interoperability and portability of professional data
+CredLancer enables organizations to issue tamper-proof credentials to employees and other members, and allows professionals to showcase these on-chain credentials along with their professional development certifications. With the integration of Zero-Knowledge Proofs, CredLancer ensures that personal data remains private while still allowing for verifiable validation of professional qualifications.
 
-# Project Name
-
-> "https://github.com/captainahab0x/CredLancer_Nov22" is the repository for our portfalio 
+> "https://github.com/captainahab0x/CredQuest" is the repository for the added feature of a gig marketplace build with IPFS & Filcoin Virtual Machine
 
 ## Built With
 
@@ -23,17 +24,8 @@ To get a local copy up and running follow these simple example steps.
 - get into to directory "CredLancer_Nov22"
 - write: npm install
 
-##Our project
-
-# Demo:
-You can see the next pages in our [figma] (https://www.figma.com/file/W0RpvEENLBe4UhxjrtM2II/Website-Mockup?node-id=137%3A78&t=0KxJLnFAwSqy0Ob3-0) 
-
-- Landing
-- Signup Freelancer
-- Signup Organization 
-- Dashboard
-- Project List
-
+# User Flow:
+You can see our deck here: https://bit.ly/CredLancerSpaceWarp
 
 ## Workflow: Organization and freelancers
 
