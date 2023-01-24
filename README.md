@@ -2,9 +2,10 @@
 # CredLancer
 CredLancer aims to deliver tamper-proof credentials, showcase professional development and achievement, while maintaining data privacy and sovereignty. We aim to address three major problems:
 
-The lack of trust and verifiability in professional credentials
-Difficulty in demonstrating professional development and achievements
-Lack of interoperability and portability of professional data
+1. The lack of trust and verifiability in professional credentials
+2. Difficulty in demonstrating professional development and achievements
+3. Lack of interoperability and portability of professional data
+
 CredLancer enables organizations to issue tamper-proof credentials to employees and other members, and allows professionals to showcase these on-chain credentials along with their professional development certifications. With the integration of Zero-Knowledge Proofs, CredLancer ensures that personal data remains private while still allowing for verifiable validation of professional qualifications.
 
 > "https://github.com/captainahab0x/CredQuest" is the repository for the added feature of a gig marketplace build with IPFS & Filcoin Virtual Machine
